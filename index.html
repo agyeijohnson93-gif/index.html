@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>MORRIS COLLECTION — Modern Marketplace</title>
+<meta name="description" content="MORRIS COLLECTION — fashion, accessories, home and automotive essentials.">
+<style>
+:root{--p:#6d28d9;--p2:#8b5cf6;--ink:#171326;--muted:#6b6680;--bg:#f7f5ff;--card:#fff;--line:#e8e3f2;--good:#138a5b;--danger:#d92d50;--shadow:0 16px 45px rgba(54,30,110,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial;color:var(--ink);background:linear-gradient(135deg,#f8f5ff,#fff 45%,#f3efff);min-height:100vh}
+button,input,select,textarea{font:inherit}button{cursor:pointer}.top{background:#24113f;color:#fff;text-align:center;padding:9px;font-size:13px}.nav{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.94);backdrop-filter:blur(15px);border-bottom:1px solid var(--line)}.navin{max-width:1250px;margin:auto;padding:14px 20px;display:flex;align-items:center;gap:18px}.brand{font-weight:900;font-size:21px;letter-spacing:.4px;color:var(--p);white-space:nowrap}.search{flex:1;display:flex;background:#f5f2fa;border:1px solid var(--line);border-radius:14px;overflow:hidden}.search input{border:0;background:transparent;outline:0;padding:12px 14px;flex:1;min-width:80px}.search button{border:0;background:var(--p);color:#fff;padding:0 18px}.navlinks{display:flex;gap:8px;align-items:center}.navbtn,.iconbtn{border:0;background:transparent;padding:10px 11px;border-radius:11px;color:var(--ink)}.navbtn:hover,.iconbtn:hover{background:#f1edfa}.cartbadge{background:var(--p);color:white;border-radius:999px;font-size:11px;padding:2px 6px;margin-left:3px}.hero{max-width:1250px;margin:25px auto;padding:0 20px}.heroBox{border-radius:28px;padding:55px;min-height:355px;color:white;background:radial-gradient(circle at 85% 20%,#c4b5fd 0,transparent 28%),linear-gradient(120deg,#35115f,#6d28d9 55%,#9d65ff);box-shadow:var(--shadow);position:relative;overflow:hidden}.heroBox:after{content:"";position:absolute;width:320px;height:320px;border-radius:50%;right:-90px;bottom:-140px;background:rgba(255,255,255,.12)}.hero h1{font-size:clamp(38px,6vw,67px);line-height:.98;margin:0 0 17px;max-width:760px}.hero p{font-size:18px;max-width:650px;color:#eee6ff}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.primary,.secondary{border:0;border-radius:12px;padding:12px 18px;font-weight:800}.primary{background:var(--p);color:#fff}.hero .primary{background:#fff;color:#4c1d95}.secondary{background:#fff;color:var(--p);border:1px solid var(--line)}.wrap{max-width:1250px;margin:auto;padding:0 20px}.section{margin:35px 0}.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:10px;margin-bottom:17px}.section h2{margin:0;font-size:26px}.muted{color:var(--muted);font-size:14px}.cats{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.cat{background:#fff;border:1px solid var(--line);border-radius:18px;padding:19px 13px;text-align:center;box-shadow:0 5px 20px rgba(30,10,70,.05);transition:.2s}.cat:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.cat .emoji{font-size:29px}.cat strong{display:block;margin-top:9px}.toolbar{display:flex;gap:10px;flex-wrap:wrap}.toolbar select,.toolbar input,.form input,.form select,.form textarea{border:1px solid var(--line);border-radius:11px;padding:11px;background:#fff;outline:none;width:100%}.toolbar input{width:210px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.product{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 5px 18px rgba(30,10,70,.05);display:flex;flex-direction:column}.pic{aspect-ratio:1/1;background:#eee9f8;position:relative;overflow:hidden}.pic img{width:100%;height:100%;object-fit:cover}.pill{position:absolute;top:10px;left:10px;background:#fff;border-radius:999px;padding:6px 9px;font-size:11px;font-weight:800}.productbody{padding:14px}.product h3{margin:0 0 6px;font-size:16px}.rating{font-size:13px;color:#f59e0b}.price{font-size:20px;font-weight:900;margin:8px 0}.old{text-decoration:line-through;color:#999;font-size:13px;margin-left:5px}.opts{display:flex;gap:6px;flex-wrap:wrap;margin:9px 0}.opt{border:1px solid #d9d2e7;background:#fff;border-radius:8px;padding:5px 8px;font-size:12px}.opt.selected{border-color:var(--p);background:#f2eaff;color:var(--p);font-weight:800}.product .primary{width:100%;margin-top:auto}.features{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.feature{background:#fff;border:1px solid var(--line);padding:20px;border-radius:17px}.feature b{display:block;margin-bottom:5px}.faq{display:grid;gap:9px}.faq details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px}.footer{margin-top:55px;background:#20102f;color:#ddd;padding:45px 20px}.footerin{max-width:1250px;margin:auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:30px}.footer h3{color:#fff}.footer p{color:#bcb3c9}.modal{position:fixed;inset:0;background:rgba(20,10,35,.58);display:none;align-items:center;justify-content:center;z-index:100;padding:15px}.modal.open{display:flex}.panel{background:#fff;width:min(760px,100%);max-height:92vh;overflow:auto;border-radius:20px;padding:24px;box-shadow:0 30px 80px rgba(0,0,0,.25)}.panel.wide{width:min(1050px,100%)}.panelhead{display:flex;justify-content:space-between;align-items:center}.close{border:0;background:#f3f0f7;border-radius:10px;padding:8px 11px}.form{display:grid;gap:12px}.form label{font-size:13px;font-weight:800}.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.orderline{display:flex;justify-content:space-between;gap:15px;padding:12px 0;border-bottom:1px solid var(--line)}.empty{text-align:center;padding:35px;color:var(--muted)}.adminOnly{display:none}.adminbar{background:#17101f;color:#fff;padding:10px 20px}.adminbarin{max-width:1250px;margin:auto;display:flex;justify-content:space-between;gap:10px;align-items:center}.adminbar button{border:0;border-radius:8px;padding:7px 10px}.adminnav{display:flex;gap:8px;flex-wrap:wrap;margin:15px 0}.adminnav button{border:1px solid var(--line);background:#fff;padding:9px 12px;border-radius:10px}.table{width:100%;border-collapse:collapse}.table th,.table td{text-align:left;padding:10px;border-bottom:1px solid var(--line);font-size:13px}.danger{background:#fff0f3!important;color:var(--danger)!important;border-color:#ffd0d9!important}.success{color:var(--good);font-weight:800}.notice{background:#f3efff;border:1px solid #ddd0fa;border-radius:12px;padding:12px;font-size:13px}.toast{position:fixed;right:18px;bottom:18px;background:#21102f;color:#fff;padding:13px 17px;border-radius:12px;display:none;z-index:200}.toast.show{display:block}@media(max-width:900px){.cats{grid-template-columns:repeat(3,1fr)}.grid{grid-template-columns:repeat(2,1fr)}.features{grid-template-columns:repeat(2,1fr)}.footerin{grid-template-columns:1fr 1fr}.navlinks .navbtn:nth-child(1){display:none}}@media(max-width:600px){.navin{flex-wrap:wrap}.brand{width:100%}.search{order:3;flex-basis:100%}.heroBox{padding:35px 25px}.cats{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}.features,.footerin,.row{grid-template-columns:1fr}.toolbar input{width:100%}}
+</style>
+</head>
+<body>
+<div class="top">✨ Welcome to MORRIS COLLECTION — discover new styles, useful essentials & great value.</div>
+<nav class="nav"><div class="navin">
+  <div class="brand">MORRIS COLLECTION</div>
+  <div class="search"><input id="search" placeholder="Search products, categories..." oninput="renderProducts()"><button onclick="renderProducts()">Search</button></div>
+  <div class="navlinks">
+    <button class="navbtn" onclick="openModal('account')">Account</button>
+    <button class="navbtn" onclick="openOrders()">Orders</button>
+    <button class="navbtn" onclick="openCart()">🛒 Cart <span class="cartbadge" id="cartCount">0</span></button>
+  </div>
+</div></nav>
+
+<section class="hero"><div class="heroBox">
+  <h1>Style your world.</h1>
+  <p>Shop fashion, accessories, home essentials and automotive items in one beautiful collection. Choose your size, color and other available options before you buy.</p>
+  <div class="actions"><button class="primary" onclick="document.getElementById('products').scrollIntoView()">Shop now</button><button class="secondary" onclick="openOrders()">Track an order</button></div>
+</div></section>
+
+<main class="wrap">
+<section class="section"><div class="sectionhead"><div><h2>Shop by category</h2><span class="muted">Everything arranged for easy browsing.</span></div></div>
+<div class="cats">
+  <div class="cat" onclick="setCat('Accessories')"><div class="emoji">👜</div><strong>Accessories</strong></div>
+  <div class="cat" onclick="setCat('Clothes')"><div class="emoji">👕</div><strong>Clothes</strong></div>
+  <div class="cat" onclick="setCat('Shoes')"><div class="emoji">👟</div><strong>Shoes</strong></div>
+  <div class="cat" onclick="setCat('Home')"><div class="emoji">🏠</div><strong>Home</strong></div>
+  <div class="cat" onclick="setCat('Cars')"><div class="emoji">🚗</div><strong>Car items</strong></div>
+  <div class="cat" onclick="setCat('All')"><div class="emoji">✨</div><strong>All products</strong></div>
+</div></section>
+
+<section class="section" id="products"><div class="sectionhead"><div><h2>Featured collection</h2><span class="muted" id="resultText"></span></div>
+<div class="toolbar"><input id="minmax" placeholder="Search within products..." oninput="renderProducts()"><select id="sort" onchange="renderProducts()"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="new">Newest</option></select></div></div>
+<div class="grid" id="grid"></div></section>
+
+<section class="section"><h2>Why shop with us?</h2><div class="features">
+<div class="feature">🔐 <b>Secure checkout</b><span class="muted">Designed for a simple, trustworthy buying journey.</span></div>
+<div class="feature">📦 <b>Order tracking</b><span class="muted">Keep your order reference and check its status anytime.</span></div>
+<div class="feature">💬 <b>Customer care</b><span class="muted">Need help? Use the customer care area to contact the store.</span></div>
+<div class="feature">✨ <b>Curated collection</b><span class="muted">Fashion, home and car essentials in one place.</span></div>
+</div></section>
+
+<section class="section"><h2>Frequently asked questions</h2><div class="faq">
+<details><summary><b>How do I choose a size or color?</b></summary><p class="muted">Open a product and select any available size, color or option shown before adding it to your cart.</p></details>
+<details><summary><b>Where can I find my orders?</b></summary><p class="muted">Click Orders in the navigation. After checkout, your order reference is saved in this browser for easy tracking.</p></details>
+<details><summary><b>How can I contact customer care?</b></summary><p class="muted">Click Customer Care below. The store email is intentionally not displayed on the public page.</p></details>
+<details><summary><b>Can products be returned?</b></summary><p class="muted">Return rules are controlled by the store. The admin can edit the store policy and customer-care information from Manage Store.</p></details>
+</div></section>
+</main>
+
+<footer class="footer"><div class="footerin">
+<div><h3>MORRIS COLLECTION</h3><p>Your modern marketplace for fashion, accessories, home essentials and automotive items.</p></div>
+<div><h3>Shop</h3><p>Accessories<br>Clothes<br>Shoes<br>Home<br>Car items</p></div>
+<div><h3>Help</h3><p><a href="#" onclick="openOrders();return false" style="color:#fff">Orders & tracking</a><br><a href="#" onclick="openCustomer();return false" style="color:#fff">Customer Care</a><br><a href="#products" style="color:#fff">Products</a></p></div>
+<div><h3>Store</h3><p>Secure checkout<br>Easy browsing<br>Order support</p></div>
+</div></footer>
+
+<div class="adminOnly" id="adminBar"><div class="adminbar"><div class="adminbarin"><span>🔒 <b>Manage Store</b> — Admin mode</span><button onclick="openAdmin()">Open dashboard</button><button onclick="logoutAdmin()">Log out</button></div></div></div>
+
+<!-- ACCOUNT -->
+<div class="modal" id="account"><div class="panel"><div class="panelhead"><h2>My Account</h2><button class="close" onclick="closeModal('account')">✕</button></div>
+<div id="accountBody"></div></div></div>
+
+<!-- CART -->
+<div class="modal" id="cart"><div class="panel"><div class="panelhead"><h2>Your Cart</h2><button class="close" onclick="closeModal('cart')">✕</button></div><div id="cartBody"></div></div></div>
+
+<!-- PRODUCT -->
+<div class="modal" id="productModal"><div class="panel"><div class="panelhead"><h2 id="pmTitle"></h2><button class="close" onclick="closeModal('productModal')">✕</button></div><div id="pmBody"></div></div></div>
+
+<!-- CHECKOUT -->
+<div class="modal" id="checkout"><div class="panel"><div class="panelhead"><h2>Checkout</h2><button class="close" onclick="closeModal('checkout')">✕</button></div>
+<div class="notice">Demo storefront checkout. For real payments, connect a PCI-compliant payment provider (such as Stripe/PayPal) on a secure server; never store card details in this HTML file.</div><div id="checkoutBody"></div></div></div>
+
+<!-- ORDERS -->
+<div class="modal" id="orders"><div class="panel"><div class="panelhead"><h2>Orders & Tracking</h2><button class="close" onclick="closeModal('orders')">✕</button></div><div id="ordersBody"></div></div></div>
+
+<!-- CUSTOMER -->
+<div class="modal" id="customer"><div class="panel"><div class="panelhead"><h2>Customer Care</h2><button class="close" onclick="closeModal('customer')">✕</button></div>
+<p>We're here to help with products, orders and general questions.</p><div class="notice">For privacy, the store email is not printed on the public storefront. Use the contact button below to open an email to customer care.</div>
+<button class="primary" style="margin-top:14px" onclick="location.href='mailto:agyeijohnson93@gmail.com?subject=MORRIS%20COLLECTION%20Customer%20Care'">Contact Customer Care</button></div></div>
+
+<!-- ADMIN LOGIN -->
+<div class="modal" id="adminLogin"><div class="panel"><div class="panelhead"><h2>Private Manager Access</h2><button class="close" onclick="closeModal('adminLogin')">✕</button></div>
+<div class="notice">This single-file version is a local prototype. Do not use a real password in front-end source code for a production store.</div>
+<form class="form" style="margin-top:15px" onsubmit="adminLogin(event)">
+<label>Admin email<input id="adminEmail" type="email" autocomplete="username" required></label>
+<label>Admin password<input id="adminPass" type="password" autocomplete="current-password" required></label>
+<label>Secret code<input id="secretCode" inputmode="numeric" required></label>
+<button class="primary">Sign in to Manage Store</button></form></div></div>
+
+<!-- ADMIN -->
+<div class="modal" id="admin"><div class="panel wide"><div class="panelhead"><h2>Manage Store</h2><button class="close" onclick="closeModal('admin')">✕</button></div>
+<div class="adminnav"><button onclick="adminTab('productsAdmin')">Products</button><button onclick="adminTab('addAdmin')">Add product</button><button onclick="adminTab('ordersAdmin')">Orders</button><button onclick="adminTab('settingsAdmin')">Store settings</button></div><div id="adminBody"></div></div></div>
+
+<div class="toast" id="toast"></div>
+<script>
+const ADMIN_EMAIL="agyeijohnson93@gmail.com";
+const ADMIN_PASSWORD="Miss11Ghana@@";
+const ADMIN_SECRET="3269";
+const KEY_PRODUCTS="mc_products_v1",KEY_CART="mc_cart_v1",KEY_ORDERS="mc_orders_v1",KEY_USER="mc_user_v1",KEY_SETTINGS="mc_settings_v1";
+const demoProducts=[
+{id:1,name:"Premium Classic Hoodie",cat:"Clothes",price:39.99,old:49.99,rating:4.8,options:{Size:["S","M","L","XL","XXL"],Color:["Black","White","Violet"]},img:"https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=900&q=80",desc:"Soft everyday hoodie with a clean modern fit."},
+{id:2,name:"Urban Runner Sneakers",cat:"Shoes",price:59.99,old:79.99,rating:4.7,options:{Size:["39","40","41","42","43","44"],Color:["White","Black","Grey"]},img:"https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80",desc:"Comfortable everyday sneakers for city life."},
+{id:3,name:"Minimal Leather Bag",cat:"Accessories",price:44.99,old:54.99,rating:4.6,options:{Color:["Black","Brown","Violet"]},img:"https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=900&q=80",desc:"A versatile bag for work, travel and daily use."},
+{id:4,name:"Modern Home Lamp",cat:"Home",price:29.99,old:39.99,rating:4.5,options:{Color:["White","Black","Gold"]},img:"https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=900&q=80",desc:"Warm modern lighting for a stylish room."},
+{id:5,name:"Car Interior Organizer",cat:"Cars",price:19.99,old:24.99,rating:4.4,options:{Color:["Black","Grey","Red"]},img:"https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=900&q=80",desc:"Keep your vehicle tidy with useful storage."},
+{id:6,name:"Everyday Classic Watch",cat:"Accessories",price:34.99,old:44.99,rating:4.7,options:{Color:["Black","Silver","Gold"]},img:"https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=900&q=80",desc:"Clean, timeless design for everyday outfits."},
+{id:7,name:"Soft Home Cushion Set",cat:"Home",price:24.99,old:31.99,rating:4.5,options:{Color:["Cream","Violet","Grey"]},img:"https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=900&q=80",desc:"Comfortable cushions to refresh your living space."},
+{id:8,name:"Premium Car Phone Mount",cat:"Cars",price:17.99,old:22.99,rating:4.6,options:{Color:["Black","Silver"]},img:"https://images.unsplash.com/photo-1493238792000-8113da705763?auto=format&fit=crop&w=900&q=80",desc:"Convenient dashboard phone mounting solution."}
+];
+function load(k,def){try{return JSON.parse(localStorage.getItem(k))??def}catch{return def}}
+function save(k,v){localStorage.setItem(k,JSON.stringify(v))}
+function products(){let p=load(KEY_PRODUCTS,null);if(!p){save(KEY_PRODUCTS,demoProducts);p=demoProducts}return p}
+function settings(){return load(KEY_SETTINGS,{storeName:"MORRIS COLLECTION",supportEmail:ADMIN_EMAIL,heroTitle:"Style your world.",currency:"€"})}
+let currentCat="All";
+function money(n){return settings().currency+(+n).toFixed(2)}
+function toast(s){let t=document.getElementById("toast");t.textContent=s;t.classList.add("show");setTimeout(()=>t.classList.remove("show"),2300)}
+function setCat(c){currentCat=c;renderProducts();document.getElementById("products").scrollIntoView({behavior:"smooth"})}
+function renderProducts(){
+ let q=(document.getElementById("search").value+" "+document.getElementById("minmax").value).toLowerCase(),sort=document.getElementById("sort").value;
+ let p=products().filter(x=>(currentCat==="All"||x.cat===currentCat)&&((x.name+" "+x.cat+" "+(x.desc||"")).toLowerCase().includes(q)));
+ if(sort==="low")p.sort((a,b)=>a.price-b.price); if(sort==="high")p.sort((a,b)=>b.price-a.price); if(sort==="new")p.sort((a,b)=>b.id-a.id);
+ document.getElementById("resultText").textContent=`${p.length} product${p.length===1?"":"s"} available`;
+ document.getElementById("grid").innerHTML=p.length?p.map(card).join(''):'<div class="empty" style="grid-column:1/-1">No products found. Try another search.</div>';
+}
+function card(p){return `<article class="product"><div class="pic"><img src="${esc(p.img)}" alt="${esc(p.name)}" onerror="this.src='data:image/svg+xml;charset=UTF-8,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600"><rect width="100%" height="100%" fill="#eee9f8"/><text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="28" fill="#6d28d9">MORRIS COLLECTION</text></svg>`)}'"><span class="pill">${esc(p.cat)}</span></div><div class="productbody"><h3>${esc(p.name)}</h3><div class="rating">★★★★★ <span class="muted">${p.rating||"New"}</span></div><div class="price">${money(p.price)} ${p.old?`<span class="old">${money(p.old)}</span>`:""}</div><div class="muted">${esc(p.desc||"Quality item from MORRIS COLLECTION.")}</div><div class="actions"><button class="secondary" style="flex:1" onclick="viewProduct(${p.id})">View options</button></div></div></article>`}
+function esc(s){return String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]))}
+function viewProduct(id){let p=products().find(x=>x.id===id);if(!p)return;document.getElementById("pmTitle").textContent=p.name;let opts=Object.entries(p.options||{}).map(([k,v])=>`<div style="margin-top:13px"><b>${esc(k)}</b><div class="opts">${v.map((o,i)=>`<button class="opt ${i===0?"selected":""}" data-group="${esc(k)}" onclick="selectOpt(this)">${esc(o)}</button>`).join("")}</div></div>`).join("");document.getElementById("pmBody").innerHTML=`<div class="row"><img src="${esc(p.img)}" style="width:100%;border-radius:15px;aspect-ratio:1;object-fit:cover"><div><div class="rating">★★★★★ ${p.rating||""}</div><div class="price">${money(p.price)}</div><p class="muted">${esc(p.desc||"")}</p>${opts}<label style="display:block;margin-top:14px"><b>Quantity</b><input id="pmQty" type="number" min="1" value="1" style="width:90px;margin-left:8px;padding:8px;border:1px solid var(--line);border-radius:8px"></label><button class="primary" style="margin-top:18px;width:100%" onclick="addFromModal(${p.id})">Add to cart</button></div></div>`;openModal("productModal")}
+function selectOpt(el){document.querySelectorAll(`[data-group="${CSS.escape(el.dataset.group)}"]`).forEach(x=>x.classList.remove("selected"));el.classList.add("selected")}
+function selectedOptions(){let o={};document.querySelectorAll("#pmBody .opt.selected").forEach(x=>o[x.dataset.group]=x.textContent);return o}
+function addFromModal(id){let q=Math.max(1,+document.getElementById("pmQty").value||1),o=selectedOptions(),c=load(KEY_CART,[]);c.push({id,qty:q,options:o});save(KEY_CART,c);updateCart();closeModal("productModal");toast("Added to cart")}
+function updateCart(){let c=load(KEY_CART,[]);document.getElementById("cartCount").textContent=c.reduce((s,x)=>s+x.qty,0)}
+function cartLines(){let c=load(KEY_CART,[]),ps=products();return c.map((x,i)=>{let p=ps.find(y=>y.id===x.id);return p?{...x,p,i}:null}).filter(Boolean)}
+function openCart(){let lines=cartLines(),total=lines.reduce((s,x)=>s+x.p.price*x.qty,0);document.getElementById("cartBody").innerHTML=lines.length?`${lines.map(x=>`<div class="orderline"><div><b>${esc(x.p.name)}</b><div class="muted">${Object.entries(x.options||{}).map(([k,v])=>esc(k)+": "+esc(v)).join(" · ")} · Qty ${x.qty}</div></div><div><b>${money(x.p.price*x.qty)}</b><button class="close danger" onclick="removeCart(${x.i})">Remove</button></div></div>`).join("")}<div style="text-align:right;margin-top:17px"><h3>Total: ${money(total)}</h3><button class="primary" onclick="openCheckout()">Checkout</button></div>`:'<div class="empty">Your cart is empty.</div>';openModal("cart")}
+function removeCart(i){let c=load(KEY_CART,[]);c.splice(i,1);save(KEY_CART,c);updateCart();openCart()}
+function openCheckout(){let lines=cartLines();if(!lines.length){toast("Your cart is empty");return}document.getElementById("checkoutBody").innerHTML=`<form class="form" style="margin-top:17px" onsubmit="placeOrder(event)"><div class="row"><label>Full name<input id="coName" required></label><label>Email<input id="coEmail" type="email" required></label></div><div class="row"><label>Phone<input id="coPhone" required></label><label>Country<input id="coCountry" value="France" required></label></div><label>Delivery address<textarea id="coAddress" rows="3" required></textarea></label><div class="row"><label>Payment method<select id="coMethod"><option>Card (secure provider)</option><option>PayPal</option><option>Cash on delivery</option><option>Bank transfer</option></select></label><label>Order total<input value="${money(lines.reduce((s,x)=>s+x.p.price*x.qty,0))}" readonly></label></div><button class="primary">Place order</button></form>`;closeModal("cart");openModal("checkout")}
+function placeOrder(e){e.preventDefault();let lines=cartLines(),o=load(KEY_ORDERS,[]),id="MC-"+Date.now().toString(36).toUpperCase(),order={id,date:new Date().toISOString(),customer:{name:coName.value,email:coEmail.value,phone:coPhone.value,country:coCountry.value,address:coAddress.value},method:coMethod.value,items:lines.map(x=>({name:x.p.name,price:x.p.price,qty:x.qty,options:x.options})),total:lines.reduce((s,x)=>s+x.p.price*x.qty,0),status:"Order received"};o.unshift(order);save(KEY_ORDERS,o);save(KEY_CART,[]);updateCart();closeModal("checkout");toast("Order placed: "+id);openOrders()}
+function openOrders(){let os=load(KEY_ORDERS,[]);document.getElementById("ordersBody").innerHTML=os.length?os.map(o=>`<div style="border:1px solid var(--line);border-radius:14px;padding:15px;margin:10px 0"><div style="display:flex;justify-content:space-between;gap:10px"><b>${esc(o.id)}</b><span class="success">${esc(o.status)}</span></div><div class="muted">${new Date(o.date).toLocaleString()} · ${money(o.total)}</div><div style="margin-top:10px">${o.items.map(i=>`${esc(i.name)} × ${i.qty}`).join("<br>")}</div><div class="muted" style="margin-top:9px">Shipping: ${esc(o.customer.name)} · ${esc(o.customer.country)}</div></div>`).join(""):'<div class="empty">No orders yet. Your orders will appear here after checkout.</div>';openModal("orders")}
+function openCustomer(){openModal("customer")}
+function openModal(id){document.getElementById(id).classList.add("open");if(id==="account")renderAccount()}
+function closeModal(id){document.getElementById(id).classList.remove("open")}
+function renderAccount(){let u=load(KEY_USER,null);document.getElementById("accountBody").innerHTML=u?`<p>Signed in as <b>${esc(u.name)}</b> (${esc(u.email)})</p><button class="secondary" onclick="localStorage.removeItem(KEY_USER);renderAccount();toast('Signed out')">Sign out</button>`:`<form class="form" onsubmit="saveAccount(event)"><label>Name<input id="uName" required></label><label>Email<input id="uEmail" type="email" required></label><label>Password<input id="uPass" type="password" required minlength="6"></label><button class="primary">Create account / Sign in</button></form><p class="muted">This single-file prototype stores account data only in this browser. Use a real authentication service for production.</p>`}
+function saveAccount(e){e.preventDefault();save(KEY_USER,{name:uName.value,email:uEmail.value});renderAccount();toast("Account saved")}
+function adminLogin(e){e.preventDefault();if(adminEmail.value.trim().toLowerCase()===ADMIN_EMAIL.toLowerCase()&&adminPass.value===ADMIN_PASSWORD&&secretCode.value===ADMIN_SECRET){sessionStorage.setItem("mc_admin","1");closeModal("adminLogin");showAdminBar();openAdmin();toast("Admin access granted")}else toast("Invalid admin credentials")}
+function showAdminBar(){if(sessionStorage.getItem("mc_admin")==="1")document.getElementById("adminBar").style.display="block"}
+function logoutAdmin(){sessionStorage.removeItem("mc_admin");document.getElementById("adminBar").style.display="none";toast("Admin logged out")}
+function openAdmin(){if(sessionStorage.getItem("mc_admin")!=="1"){openModal("adminLogin");return}openModal("admin");adminTab("productsAdmin")}
+function adminTab(tab){let b=document.getElementById("adminBody");if(tab==="productsAdmin")b.innerHTML=adminProducts();if(tab==="addAdmin")b.innerHTML=addForm();if(tab==="ordersAdmin")b.innerHTML=adminOrders();if(tab==="settingsAdmin")b.innerHTML=settingsForm()}
+function adminProducts(){let p=products();return `<p class="muted">${p.length} products in your catalog. Edit, replace photos or remove products below.</p><table class="table"><tr><th>Product</th><th>Category</th><th>Price</th><th>Options</th><th>Actions</th></tr>${p.map(x=>`<tr><td><img src="${esc(x.img)}" style="width:48px;height:48px;object-fit:cover;border-radius:8px;vertical-align:middle"> ${esc(x.name)}</td><td>${esc(x.cat)}</td><td>${money(x.price)}</td><td>${Object.entries(x.options||{}).map(([k,v])=>esc(k)+": "+v.map(esc).join(", ")).join("<br>")}</td><td><button class="secondary" onclick="editProduct(${x.id})">Edit</button> <button class="secondary danger" onclick="deleteProduct(${x.id})">Delete</button></td></tr>`).join("")}</table>`}
+function addForm(p={}){let opts=p.options||{Size:[""],Color:[""]};return `<form class="form" onsubmit="saveProduct(event,${p.id||0})"><div class="row"><label>Product name<input id="apName" value="${esc(p.name||"")}" required></label><label>Category<select id="apCat">${["Accessories","Clothes","Shoes","Home","Cars"].map(c=>`<option ${p.cat===c?"selected":""}>${c}</option>`).join("")}</select></label></div><div class="row"><label>Price<input id="apPrice" type="number" step="0.01" value="${p.price||""}" required></label><label>Old price / sale price<input id="apOld" type="number" step="0.01" value="${p.old||""}"></label></div><label>Image URL<input id="apImg" value="${esc(p.img||"")}" placeholder="Paste an image URL"></label><label>Or upload a new photo<input id="apFile" type="file" accept="image/*" onchange="previewUpload(this)"></label><img id="apPreview" src="${esc(p.img||"")}" style="display:${p.img?"block":"none"};max-width:180px;border-radius:12px"></label><label>Description<textarea id="apDesc" rows="3">${esc(p.desc||"")}</textarea></label><label>Size options (comma separated)<input id="apSizes" value="${esc((opts.Size||[]).join(", "))}" placeholder="S, M, L, XL"></label><label>Color options (comma separated)<input id="apColors" value="${esc((opts.Color||[]).join(", "))}" placeholder="Black, White, Violet"></label><button class="primary">${p.id?"Save changes":"Publish product"}</button></form>`}
+let uploadedImage="";
+function previewUpload(input){let f=input.files?.[0];if(!f)return;let r=new FileReader();r.onload=()=>{uploadedImage=r.result;apPreview.src=r.result;apPreview.style.display="block"};r.readAsDataURL(f)}
+function saveProduct(e,id){e.preventDefault();let p=products(),obj={id:id||Date.now(),name:apName.value.trim(),cat:apCat.value,price:+apPrice.value,old:+apOld.value||0,img:uploadedImage||apImg.value.trim()||"https://placehold.co/900x900/eee9f8/6d28d9?text=MORRIS+COLLECTION",rating:5,desc:apDesc.value.trim(),options:{}};let sz=apSizes.value.split(",").map(x=>x.trim()).filter(Boolean),co=apColors.value.split(",").map(x=>x.trim()).filter(Boolean);if(sz.length)obj.options.Size=sz;if(co.length)obj.options.Color=co;if(id){let i=p.findIndex(x=>x.id===id);p[i]=obj}else p.unshift(obj);save(KEY_PRODUCTS,p);uploadedImage="";renderProducts();adminTab("productsAdmin");toast(id?"Product updated":"Product published")}
+function editProduct(id){let p=products().find(x=>x.id===id);uploadedImage="";document.getElementById("adminBody").innerHTML=addForm(p)}
+function deleteProduct(id){if(!confirm("Delete this product?"))return;save(KEY_PRODUCTS,products().filter(x=>x.id!==id));renderProducts();adminTab("productsAdmin");toast("Product deleted")}
+function adminOrders(){let o=load(KEY_ORDERS,[]);return `<p class="muted">Manage customer orders and update tracking status.</p>${o.length?`<table class="table"><tr><th>Order</th><th>Customer</th><th>Total</th><th>Status</th></tr>${o.map(x=>`<tr><td><b>${esc(x.id)}</b><br><small>${new Date(x.date).toLocaleString()}</small></td><td>${esc(x.customer.name)}<br>${esc(x.customer.email)}</td><td>${money(x.total)}</td><td><select onchange="setOrderStatus('${x.id}',this.value)">${["Order received","Processing","Packed","Shipped","Out for delivery","Delivered","Cancelled"].map(s=>`<option ${x.status===s?"selected":""}>${s}</option>`).join("")}</select></td></tr>`).join("")}</table>`:'<div class="empty">No orders.</div>'}`}
+function setOrderStatus(id,status){let o=load(KEY_ORDERS,[]),x=o.find(a=>a.id===id);if(x){x.status=status;save(KEY_ORDERS,o);toast("Order status updated")}}
+function settingsForm(){let s=settings();return `<form class="form" onsubmit="saveSettings(event)"><label>Store name<input id="stName" value="${esc(s.storeName)}"></label><label>Customer-care email<input id="stEmail" type="email" value="${esc(s.supportEmail)}"></label><label>Currency symbol<input id="stCurrency" value="${esc(s.currency)}"></label><label>Hero headline<input id="stHero" value="${esc(s.heroTitle)}"></label><div class="notice">The customer-care email is kept out of normal storefront text, but this demo uses it for the contact button. In production, keep private business credentials and payment secrets on a server.</div><button class="primary">Save store settings</button></form>`}
+function saveSettings(e){e.preventDefault();save(KEY_SETTINGS,{storeName:stName.value,supportEmail:stEmail.value,currency:stCurrency.value||"€",heroTitle:stHero.value});document.querySelector(".brand").textContent=stName.value;renderProducts();toast("Store settings saved")}
+document.addEventListener("keydown",e=>{if(e.key==="Escape")document.querySelectorAll(".modal.open").forEach(x=>x.classList.remove("open"))});
+document.querySelectorAll(".modal").forEach(m=>m.addEventListener("click",e=>{if(e.target===m)m.classList.remove("open")}));
+document.addEventListener("DOMContentLoaded",()=>{renderProducts();updateCart();showAdminBar()});
+/* Admin access entry: press Ctrl+Shift+M. The manager is deliberately absent from the public navigation. */
+document.addEventListener("keydown",e=>{if(e.ctrlKey&&e.shiftKey&&e.key.toLowerCase()==="m")openAdmin()});
+</script>
+</body>
+</html>
